@@ -79,7 +79,10 @@
         <!-- /.col -->
       </div>
 
+      <hr>
+
       <div class="form-group">
+        <label>Change Language</label>
         <select class="form-control" id="locale">
           @foreach($languages as $key => $language)
             <option value="{{$key}}" {!! $key != $current ?: 'selected' !!}>{{$language}}</option>
